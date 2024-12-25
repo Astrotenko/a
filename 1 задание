@@ -1,0 +1,21 @@
+temperature = float(input("Введите температуру: "))
+
+if temperature > 20 and temperature < 30:
+    has_osadki = input("Есть осадки? (да/нет): ")
+    if has_osadki == "да":
+          print("Наденьте кофту, штаны и дождевик.")
+    else:
+          print("Наденьте кофту и штаны.")
+else:
+    if temperature > 0 and temperature < 20:
+        has_osadki = input("Есть осадки? (да/нет): ")
+        if has_osadki == "да":
+            heavy_osadki = input("Осадки сильные? (да/нет): ")
+            if heavy_osadki == "да":
+              print("Наденьте куртку, сапоги и зонт.")
+            else:
+                  print("Наденьте куртку и дождевик.")
+        else:
+               print("Наденьте куртку.")
+    else:
+          print("Наденьте пуховик.")
